@@ -13,7 +13,7 @@ let numofPost = process.argv[2];
     ]);
 
     // Change "here" to username of person 
-    await page.type("input[placeholder='Search']", "Heer");
+    await page.type("input[placeholder='Search']", "Here");
     await page.waitForSelector("._01UL2 .fuqBx a", { visible: true });
     await Promise.all([
         page.waitForNavigation({ waitUntil: "networkidle2" }),
